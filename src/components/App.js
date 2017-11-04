@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import FilterProductTable from '../components/FilterProductTable';
+import FilterableProductTable from '../containers/FilterableProductTable';
 import PRODUCTS from '../data/products';
 
 import './App.css';
@@ -9,7 +9,7 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <FilterProductTable products={PRODUCTS} />
+      <FilterableProductTable products={PRODUCTS} />
     );
   }
 }
